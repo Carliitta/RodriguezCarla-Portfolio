@@ -1,0 +1,14 @@
+comandos postgresSQL
+psql - u posgres 
+eliminar base de datos :
+DROP DATABASE nombre
+salir:
+\q
+ver databases:
+\l
+ingresar dentro de una base
+\c nombrebase
+ver tablas en database :
+\dt
+describe database:
+\d nombretabla

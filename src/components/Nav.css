@@ -1,0 +1,79 @@
+.nav{
+    height: 80px;
+   
+    color: var(--color-green);
+   
+}
+.containerNav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    margin-left: 0;
+    justify-content:space-evenly;
+    align-items: center;
+    position: fixed;
+    background-color: var(--color-black);
+}
+.nav_img{
+width: 130px;
+margin-top: 75px;
+
+}
+.nav_menu{
+    display: grid;
+    grid-auto-flow:column;
+    gap: 3em;
+}
+.nav_input:checked + .nav_menu{
+    background-color: var(--color-black);
+}
+.nav_label, .nav_input{
+display: none;
+}
+.nav_item{
+    font-size: 20px;
+    color: var(--color-green);
+    text-decoration: none;
+    --clippy:polygon(0 0,0 0, 0 100%, 0 100%)
+}
+.nav_item::after{
+    content: "";
+    display: block;
+    background-color: var(--color-green);
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+.nav_item:hover{
+    --clippy:polygon(0 0,100% 0, 100% 100%. 0 100%)
+}
+
+@media(max-width:700px){
+    .containerNav{
+        margin-left: 10px;
+    }
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+ 
+    .nav_menu{
+        position: fixed;
+        top:150px;
+        bottom: 0;
+        background-color: var(--color-blue);
+        width: 100%;
+        left: 0%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+    }
+    .nav_input:checked + .nav_menu{
+        clip-path: circle(100% at center);
+    }
+}

@@ -1,0 +1,50 @@
+.containerPerfil{
+
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+ 
+}
+.foto{
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--color-green);
+
+}
+.foto:hover{
+    opacity: 0.9;
+}
+.parrafo{
+    font-size: 20px;
+    text-align:start;
+    margin-left: 50px;
+    margin-top: 30px;
+    width: 550px;
+    color: var(--color-green);
+}
+.h3{
+    color: var(--color-green);
+    padding-top: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+.containerIcon{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 50px;
+}
+.iconos{
+    width: 25px;
+    margin-right: 5px;
+}
+
+.iconos:hover{
+opacity: 0.8;
+}
+.iconp{
+font-size: 20px;
+margin-right: 8px;
+color: var(--color-green);
+}
+

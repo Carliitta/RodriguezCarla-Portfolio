@@ -1,0 +1,35 @@
+.containerProyectos{
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+}
+.titleProyects{
+    color: var(--color-green);
+    padding-top: 100px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.proyectos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 200px; /* para separar entre ellos */
+    justify-content: center;
+    flex-wrap: nowrap;
+  
+}
+.primero{
+    width: 350px;
+    height: 300px;
+    background-color: brown;
+    box-shadow: rgba(51, 45, 45, 0.25) 0px 14px 28px, rgba(59, 199, 141, 0.22) 0px 10px 10px;
+}
+.segundo{
+    width: 350px;
+    height: 300px;
+    background-color: rgb(229, 73, 73);
+    box-shadow: rgba(51, 45, 45, 0.25) 0px 14px 28px, rgba(59, 199, 141, 0.22) 0px 10px 10px;
+}
+.primero:hover,.segundo:hover{
+    opacity: 0.6;
+}

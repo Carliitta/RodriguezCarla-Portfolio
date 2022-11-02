@@ -1,0 +1,65 @@
+.containerContact{
+    height: 100vh;
+    background-color: var(--color-blue);
+    padding-top: 120px;
+
+
+}
+.form{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 38%;
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+    background-color: var(--color-black);
+    box-shadow: rgba(51, 45, 45, 0.25) 0px 14px 28px, rgba(244, 248, 246, 0.22) 0px 6px 6px;
+}
+.inputs{
+padding: 10px;
+
+}
+.btn{
+    width: 90px;
+    height: 30px;
+    background: none;
+    text-align: center;
+    padding: 3px;
+    border:1px solid  var(--color-green) ;
+    color: var(--color-green);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+.text-input{
+width: 300px;
+height: 30px;
+border-radius: 5px;
+border: none;
+margin:5px ;
+}
+#text{
+    height: 80px;
+}
+.icon2{
+    width: 30px;
+}
+.otrosIconos{
+    margin-top: 50px;
+}
+.otrosIconos a{
+    text-decoration: none;
+}
+.pregunta{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: var(--color-green);
+ 
+}
