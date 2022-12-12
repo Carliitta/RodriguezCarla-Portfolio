@@ -2,7 +2,7 @@ import "../components/Nav.css"
 import menu from "../img/menu.png"
 import download from "../img/download.png"
 import Home from "./Home";
-import doc from "./doc/sql.txt"
+import doc from  "./doc/Curriculm-vitae-2022.pdf"
 export default function Nav() {
 
     return(

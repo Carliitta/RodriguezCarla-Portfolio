@@ -9,7 +9,7 @@ import node from "../img/node-js.png"
 import "../components/Sobre.css"
 export default function Sobre() {
     return(
-        <div>
+        <div className="divPrincipal">
           <h3 className="h3">Sobre mi:</h3>
         <div className="containerPerfil">
           
@@ -25,14 +25,15 @@ export default function Sobre() {
         </div>
         <div className="containerIcon">
             <p className="iconp">Tecnologias👉</p>
-            <img  className="iconos" src={css} title="css" />
-            <img className="iconos" src={html} title="html" />
-            <img className="iconos" src={js} title="JavaScript" />
-            <img className="iconos" src={react} title="React" />
-            <img className="iconos" src={node} title="node.js" />
-            <img className="iconos" src={postgre} title="postgreSQL" />
+            <img  className="iconos"alt="" src={css} title="css" />
+            <img className="iconos" alt="" src={html} title="html" />
+            <img className="iconos" alt="" src={js} title="JavaScript" />
+            <img className="iconos" alt="" src={react} title="React" />
+            <img className="iconos" alt="" src={node} title="node.js" />
+            <img className="iconos" alt="" src={postgre} title="postgreSQL" />
           
         </div>
+
         </div>
     )
 };

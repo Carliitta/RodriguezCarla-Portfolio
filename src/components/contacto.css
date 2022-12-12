@@ -1,18 +1,17 @@
 .containerContact{
-    height: 100vh;
-    background-color: var(--color-blue);
+    height: 680px;
+    
     padding-top: 120px;
-
 
 }
 .form{
     display: flex;
-   flex-direction: column;
-   justify-content: center;
-   margin-left: 38%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 38%;
     border-radius: 20px;
     width: 350px;
-    height: 400px;
+    height: 480px;
     background-color: var(--color-black);
     box-shadow: rgba(51, 45, 45, 0.25) 0px 14px 28px, rgba(244, 248, 246, 0.22) 0px 6px 6px;
 }
@@ -29,7 +28,7 @@ padding: 10px;
     border:1px solid  var(--color-green) ;
     color: var(--color-green);
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .btn:hover{
     cursor: pointer;
@@ -41,16 +40,14 @@ width: 300px;
 height: 30px;
 border-radius: 5px;
 border: none;
-margin:5px ;
+margin-bottom:10px ;
 }
-#text{
-    height: 80px;
-}
+
 .icon2{
-    width: 30px;
+    width: 35px;
 }
 .otrosIconos{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .otrosIconos a{
     text-decoration: none;
@@ -63,3 +60,52 @@ margin:5px ;
     color: var(--color-green);
  
 }
+textarea {
+    width: 300px;
+    height: 120px;
+    resize: none;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .form{
+        margin-left: 30%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .form{
+        width: 300px;
+        height: 480px;
+    }
+    .text-input{
+        width: 250px;
+    }
+    textarea{
+        width: 250px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .form{
+        width: 450px;
+        height: 580px;
+    }
+    .text-input{
+        width: 350px;
+        height: 40px;
+    }
+    .btn{
+        width: 100px;
+        height: 40px;
+    }
+    textarea{
+        width: 350px;
+    }
+    .form{
+        margin-left: 18%;
+        margin-top: 130px;
+    
+    }
+    .containerContact{
+        padding-top: 130px;
+    }
+  }

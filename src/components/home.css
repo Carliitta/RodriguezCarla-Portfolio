@@ -15,14 +15,15 @@
 }
 body{
 
-    background-color:var(--color-black)
+  background: rgb(58,103,180);
+background: linear-gradient(90deg, rgb(142, 45, 199) 0%, rgb(60, 18, 165) 49%, rgba(2,0,9,1) 100%)
    
 }
 .title{
 text-align: left;
 color:var(--color-green);
-position: relative;
-font-size: 50px;
+
+font-size: 60px;
 }
 
 .container{
@@ -32,7 +33,6 @@ font-size: 50px;
     gap: 290px; /* para separar entre ellos */
     padding-top: 100px;
     flex-wrap: nowrap;
-
 }
 .img{
   
@@ -74,13 +74,21 @@ font-size: 50px;
     height: 40px;
     padding: 7px;
     background-color: var(--color-blue);
+    background: linear-gradient(150deg, #06196ec9,  #670fafc5, #057059);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
 }
 .btnContacto:hover{
     background-color: var(--color-blue);
     color: rgb(199, 236, 199);
     cursor: pointer;
+  
 }
-
+@keyframes BgGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
 
 ::-webkit-scrollbar{
    
@@ -102,9 +110,7 @@ section{
     height: 100vh;
     border-bottom: 2px;
 }
-#sobre{
-  background-color: var(--color-blue);
-}
+
 footer{
   position:fixed;
   text-align: center;
@@ -165,6 +171,9 @@ footer{
     transform: translate(-50%, -50%) rotateZ(45deg);
   }
 
+
+
+
 /* -------------------------------------------------------------------------- */
 
 
@@ -182,32 +191,66 @@ footer{
 
 
 /* medias */
-@media screen and ( max-width:480px) {
+@media screen and (max-width: 1024px) {
+
+.text{
+  margin-top: 30px;
+justify-content: center;
+}
+
+.img{
+  display: none;
+}
+ 
+}  
+@media screen and (max-width: 768px) {
+  .text{
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+    
+}
+
+@media screen and ( max-width:425px) {
+body{
+  background: rgb(46, 9, 105)
+}
+#sobre,#contacto{
+  background-color: #054970;
+}
   .container{
-   justify-content: center;
+  margin-left: 10px;
+  }
+  section{
+    height: 830px;
+    width: 670px;
+    border-bottom: 2px;
+   
   }
   .text{
    text-align: left;
+   margin-top: 200px;
   }
   .span{
-    font-size: 30px;
+    margin-top: 30px;
+    font-size: 48px;
   }
-  .img{
-    display: none;
-  }
+
   .arrow{
     display: none;
   }
+.pie{
+  margin-bottom: 10px;
+}
+.btnContacto{
+  margin-top: 90px;
+  width: 200px;
+  height: 60px;
+}
+#inicio,#sobre,#portafolio,#contacto{
+  height: 1130px;
+}
+}
 
-  }
-  @media screen and (max-width: 768px) {
-  
-    
-   }
-   @media screen and (max-width: 1023px) {
-   
-   
-    
-   }
   
     

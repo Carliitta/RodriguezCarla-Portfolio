@@ -6,7 +6,7 @@ import Nav from './Nav.jsx';
 import Contacto from './Contacto';
 import Proyectos from './Proyectos';
 import download from "../img/download.png"
-import doc from "./doc/sql.txt"
+import doc from "./doc/Curriculm-vitae-2022.pdf"
 export default function Home() {
     return(
         <div>
@@ -21,13 +21,17 @@ export default function Home() {
                       </a> 
                      
                     </div>
+                    <div className='divImg'>
                     <img className='img' src={imagen} alt='imagen'/>
+
+                    </div>
                </div>
                <a href='#sobre' className="arrow-container">
                 <div className="arrow"></div>
               
                </a>
         </section>
+       
         <section id='sobre'>
             <Sobre/>
         </section>

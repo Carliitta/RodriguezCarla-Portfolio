@@ -1,8 +1,4 @@
-.containerProyectos{
-    display: flex;
-    padding-top: 40px;
-    justify-content: center;
-}
+
 .titleProyects{
     color: var(--color-green);
     padding-top: 100px;
@@ -12,24 +8,108 @@
 }
 .proyectos{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-columns: repeat(auto-fill, 290px);
     gap: 200px; /* para separar entre ellos */
     justify-content: center;
     flex-wrap: nowrap;
-  
+    padding-top: 40px;
 }
-.primero{
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+.contenedor figure{
+   position:relative;
+    height: 250px;
+    cursor: pointer;
     width: 350px;
-    height: 300px;
-    background-color: brown;
-    box-shadow: rgba(51, 45, 45, 0.25) 0px 14px 28px, rgba(59, 199, 141, 0.22) 0px 10px 10px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
 }
-.segundo{
-    width: 350px;
-    height: 300px;
-    background-color: rgb(229, 73, 73);
-    box-shadow: rgba(51, 45, 45, 0.25) 0px 14px 28px, rgba(59, 199, 141, 0.22) 0px 10px 10px;
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
 }
-.primero:hover,.segundo:hover{
-    opacity: 0.6;
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 71, 85, 0.815);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
 }
+.contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor figure:hover > .capa h3{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.contenedor figure:hover > img{
+    transform: scale(1.3);
+}
+.contenedor figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+     margin-top: 30px;
+}
+.contenedor figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+.proyectos{
+    gap: 80px;
+
+}
+.contenedor figure {
+    width: 300px;
+    height: auto;
+}
+.contenedor figure .capa p{
+    font-size: 12px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .proyectos{
+    gap:40px
+    
+  }
+  }
+  @media screen and (max-width: 425px) {
+  .divProyectos{
+    padding-top: 130px;
+  }
+    .proyectos{
+      display: block;
+     margin-left: 20%;
+
+    }
+    .contenedor figure {
+        width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+
+    }
+    .titleProyects{
+        padding-top: 70px;
+    }
+ 
+    }

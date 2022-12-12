@@ -2,6 +2,8 @@ import  './contacto.css';
 import git from "../img/github.png"
 import linkedin from "../img/linkedin.png"
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import email from "../img/email.png"
 const {
 CORREO
 } = process.env;
@@ -9,7 +11,8 @@ export default function Contacto() {
 
   const [datos, setDatos] = useState({
     correo: '',
-    mensaje: ''
+    mensaje: '',
+    nombre:''
 })
 
  const  handleChangue =(e)=>{
@@ -20,23 +23,35 @@ export default function Contacto() {
  }
  const onSubmit=(e)=>{
   e.preventDefault();
+
+  emailjs.sendForm('service_tlj70rh','template_sl0sssj',e.target,"5tQa0-InFt1IQcAkc")
+  .then((result) => {
+    console.log(result.text)
+  }, (error) => {
+      console.log(error.text);
+  });
+  
   setDatos({
     correo: "",
-    mensaje: ""
+    mensaje: "",
+    nombre:""
   })
   alert("Mensaje Enviado con exito!")
  }
 
     return(
-      <div>
+   
       
       <div className='containerContact' >
        
           <form  onSubmit={onSubmit}className='form'>
-          <h3 className='pregunta'>Trabajemos juntos 😃​​</h3>
+            <img src={email} style={{ width: "40px", marginLeft:"40%", marginTop:"10px"}}/>
+          <h3 className='pregunta'>Enviame un mensaje ​​</h3>
             <div className='inputs'>
+            <input className='text-input' id='text' name='nombre' value={datos.nombre}  required type='text' placeholder='Nombre..' onChange={handleChangue}/>
             <input className='text-input' id='email' name='correo' value={datos.correo}  required type='email' placeholder='Correo..' onChange={handleChangue}/><br></br>
-            <input className='text-input' id='text' name='mensaje' value={datos.mensaje}  required type='text' placeholder='Mensaje..' onChange={handleChangue}/>
+            <textarea name='mensaje' id="text" cols="30" rows="10" value={datos.mensaje} required type='text' placeholder='Mensaje..' onChange={handleChangue}></textarea>
+
             </div>
             <div>
             <input className='btn' type='submit' value='Enviar'/>
@@ -48,6 +63,8 @@ export default function Contacto() {
          </form>
        
      </div>
-      </div>
+      
     )
 };
+
+

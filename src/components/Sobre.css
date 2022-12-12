@@ -3,10 +3,10 @@
     display: flex;
     padding-top: 40px;
     justify-content: center;
- 
+  
 }
 .foto{
-    width: 300px;
+    width: 280px;
     border-radius: 50%;
     border: 2px solid var(--color-green);
 
@@ -18,7 +18,7 @@
     font-size: 20px;
     text-align:start;
     margin-left: 50px;
-    margin-top: 30px;
+    margin-top: 40px;
     width: 550px;
     color: var(--color-green);
 }
@@ -48,3 +48,40 @@ margin-right: 8px;
 color: var(--color-green);
 }
 
+@media screen and (max-width: 768px) {
+  .containerPerfil{
+    display: block;
+    justify-content: center;
+  }
+      .foto{
+        width: 200px;
+        border-radius: 50%;
+      }
+      .parrafo{
+        font-size: 17px;
+        align-items: center;
+        margin-left: 20%;
+      }
+    .iconp{
+        font-size: 18px;
+    }
+    .containerIcon{
+        margin-top: 20px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+.divPrincipal{
+padding-top: 130px;
+}
+    .parrafo{
+        margin-left: 10%;
+        font-size: 18px;
+    }
+    .foto{
+        width: 230px;
+       
+    }
+    .containerIcon{
+        margin-top: 90px;
+    }
+  }
