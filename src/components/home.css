@@ -212,8 +212,19 @@ justify-content: center;
 }
 
 @media screen and ( max-width:425px) {
+  
 body{
   background: rgb(46, 9, 105)
+}
+.pie{
+  font-size: 25px;
+
+}
+footer{
+  margin-bottom: 10px;
+}
+.title{
+  font-size: 80px;
 }
 #sobre,#contacto{
   background-color: #054970;
@@ -230,10 +241,11 @@ body{
   .text{
    text-align: left;
    margin-top: 200px;
+   margin-left: 1px;
   }
   .span{
     margin-top: 30px;
-    font-size: 48px;
+    font-size: 50px;
   }
 
   .arrow{
@@ -244,15 +256,15 @@ body{
 }
 .btnContacto{
   margin-top: 90px;
-  width: 200px;
-  height: 60px;
+  width: 280px;
+  height: 80px;
+  font-size: 40px;
 }
-#inicio,#sobre,#contacto{
-  height: 1130px;
-}
-#portafolio{
+#inicio,#sobre,#contacto,#portafolio{
   height: auto;
+  padding-bottom: 50px;
 }
+
 }
 
   

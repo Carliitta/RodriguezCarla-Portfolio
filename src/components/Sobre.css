@@ -70,18 +70,41 @@ color: var(--color-green);
     }
   }
   @media screen and (max-width: 425px) {
-.divPrincipal{
-padding-top: 130px;
-}
+    .iconp{
+        font-size: 30px;
+    }
+
     .parrafo{
         margin-left: 10%;
-        font-size: 18px;
+        font-size: 30px;
     }
     .foto{
-        width: 230px;
+        width: 270px;
        
     }
     .containerIcon{
         margin-top: 90px;
     }
+.divPrincipal{
+    padding-top: 20px;
+}
+  }
+
+  @media screen and (max-width: 320px) {
+    .parrafo{
+        margin-left: 10%;
+        font-size: 30px;
+    }
+    .foto{
+        width: 300px;
+       
+    }
+    .h3{
+        font-size: 40px;
+        padding-top: 2px;
+    }
+    .iconp{
+        font-size: 30px;
+    }
+  
   }

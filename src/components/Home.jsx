@@ -10,8 +10,8 @@ import doc from "./doc/Curriculm-vitae-2022.pdf"
 export default function Home() {
     return(
         <div>
-         <section id='inicio'>
             <Nav/>
+         <section id='inicio'>
                 <div className="container">
                     <div className='text'>
                         <h1 className='title'> Hola, </h1>

@@ -1,9 +1,14 @@
 .containerContact{
-    height: 680px;
-    
-    padding-top: 120px;
+        
+    padding-top: 40px;
 
 }
+.imgMje{
+    width: 40px;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
 .form{
     display: flex;
     flex-direction: column;
@@ -85,27 +90,56 @@ textarea {
     }
   }
   @media screen and (max-width: 425px) {
-    .form{
-        width: 450px;
-        height: 580px;
-    }
+ 
     .text-input{
         width: 350px;
         height: 40px;
+        font-size: 30px;
     }
     .btn{
-        width: 100px;
-        height: 40px;
+        width: 150px;
+        height: 50px;
+        font-size: 30px;
     }
     textarea{
         width: 350px;
+        font-size: 30px;
     }
     .form{
-        margin-left: 18%;
+        margin-left: 13%;
         margin-top: 130px;
-    
+        width: 500px;
+        height: 610px;
+    }
+    .imgMje{
+        width: 70px;
+        margin-left: 40%;
+    }
+
+  }
+  @media screen and (max-width: 320px) {
+    .pregunta{
+        font-size: 30px;
+    }
+    .imgMje{
+        width: 80px;
+        margin-left: 40%;
+    }
+    .btn{
+        width: 200px;
+        font-size: 25px;
+    }
+    .form{
+        width: 550px;
+        height: 650px;
+        margin-left: 10%;
+
+    }
+    .text-input, textarea{
+        width: 390px;
+       font-size: 25px;
     }
     .containerContact{
-        padding-top: 130px;
+        padding-top: 2px;
     }
   }

@@ -24,7 +24,7 @@
     z-index: 100;
 }
 .nav_img{
-width: 130px;
+width: 120px;
 margin-top: 75px;
 
 }
@@ -42,7 +42,7 @@ margin-top: 75px;
 display: none;
 }
 .nav_item{
-    font-size: 20px;
+    font-size: 30px;
     color: var(--color-green);
     text-decoration: none;
     --clippy:polygon(0 0,0 0, 0 100%, 0 100%)

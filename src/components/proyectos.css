@@ -9,12 +9,12 @@
 .proyectos{
     display: grid;
     grid-template-columns: repeat(auto-fill, 290px);
-    gap: 200px; /* para separar entre ellos */
+    gap: 160px; /* para separar entre ellos */
     justify-content: center;
     flex-wrap: nowrap;
     padding-top: 40px;
     padding-bottom: 40px;
-   height: auto;
+    height: auto;
 }
 
 .contenedor{
@@ -27,7 +27,7 @@
    position:relative;
     height: 290px;
     cursor: pointer;
-    width: 350px;
+    width: 380px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
@@ -102,18 +102,33 @@
   }
     .proyectos{
       display: block;
-     margin-left: 20%;
+     margin-left: 13%;
 
     }
     .contenedor figure {
-        width: 400px;
+        width: 500px;
         height: auto;
         margin-bottom: 20px;
 
     }
     .titleProyects{
-        padding-top: 70px;
+        padding-top: 20px;
+        font-size: 30px;
     }
  
     }
    
+    @media screen and (max-width: 320px) {
+        .titleProyects{
+            font-size: 40px;
+            padding-top: 2px;
+        }
+        .proyectos{
+            margin-left: 10%;
+        }
+        .contenedor figure {
+            width: 550px;
+            height: auto;
+    
+        }
+    }

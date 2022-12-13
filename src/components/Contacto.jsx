@@ -45,7 +45,7 @@ export default function Contacto() {
       <div className='containerContact' >
        
           <form  onSubmit={onSubmit}className='form'>
-            <img src={email} style={{ width: "40px", marginLeft:"40%", marginTop:"10px"}}/>
+            <img className='imgMje' src={email} />
           <h3 className='pregunta'>Enviame un mensaje ​​</h3>
             <div className='inputs'>
             <input className='text-input' id='text' name='nombre' value={datos.nombre}  required type='text' placeholder='Nombre..' onChange={handleChangue}/>
