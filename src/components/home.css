@@ -247,8 +247,11 @@ body{
   width: 200px;
   height: 60px;
 }
-#inicio,#sobre,#portafolio,#contacto{
+#inicio,#sobre,#contacto{
   height: 1130px;
+}
+#portafolio{
+  height: auto;
 }
 }
 
