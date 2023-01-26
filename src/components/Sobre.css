@@ -9,7 +9,6 @@
     width: 280px;
     border-radius: 50%;
     border: 2px solid var(--color-green);
-
 }
 .foto:hover{
     opacity: 0.9;
@@ -18,7 +17,7 @@
     font-size: 20px;
     text-align:start;
     margin-left: 50px;
-    margin-top: 40px;
+    margin-top: 60px;
     width: 550px;
     color: var(--color-green);
 }
@@ -28,14 +27,27 @@
     text-align: center;
     font-size: 30px;
 }
+.div-icon-parrafo{
+    display: flex;
+}
+.div-icon-parrafo p{
+    color: var(--color-green);
+    font-size: 20px;
+}
+
 .containerIcon{
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap:5px;
+    text-align: center;
+    justify-content: center;
+    width: 700px;
+   margin-left: 40%;
+    margin-top: 10px;
 }
 .iconos{
-    width: 25px;
+    width: 30px;
+    height: 25px;
     margin-right: 5px;
 }
 
@@ -43,68 +55,152 @@
 opacity: 0.8;
 }
 .iconp{
-font-size: 20px;
-margin-right: 8px;
+font-size: 25px;
+margin-left: 20%;
 color: var(--color-green);
 }
 
+
+@media screen and ( max-width:1200px) {
+.containerIcon{
+    margin-left: 30%;
+}
+}
+@media screen and ( max-width:992px) {
+    .containerPerfil{
+        display: block;
+        justify-content: center;
+      }
+          .foto{
+            width: 450px;
+            border-radius: 50%;
+          }
+          .parrafo{
+            font-size: 40px;
+            align-items: center;
+            width: 900px;
+            margin-left: 10%;
+          }
+        .iconp{
+            margin-bottom: 50px;
+            margin-top: 50px;
+            font-size: 45px;
+            margin-left: 0%;
+        }
+        .h3{
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .containerIcon{
+            margin-top: 20px;
+        }
+        .div-icon-parrafo{
+            padding-left: 30px;
+          }
+          .div-icon-parrafo p{
+            font-size: 40px;
+          
+          }
+          .containerIcon{
+              margin-left: 15%;
+             display: grid;
+             grid-template-columns:1fr 1fr 1fr;
+             gap:30px
+          }
+          .iconos{
+            width: 50px;
+            height: 40px;
+           
+        }
+}
 @media screen and (max-width: 768px) {
   .containerPerfil{
     display: block;
     justify-content: center;
   }
       .foto{
-        width: 200px;
+        width: 500px;
         border-radius: 50%;
       }
       .parrafo{
-        font-size: 17px;
+        font-size: 45px;
         align-items: center;
-        margin-left: 20%;
+        width: 900px;
+        margin-left: 10%;
       }
     .iconp{
-        font-size: 18px;
+        margin-bottom: 90px;
+        font-size: 45px;
+        margin-left: 0%;
+    }
+    .h3{
+        font-size: 70px;
+        margin-bottom: 20px;
     }
     .containerIcon{
         margin-top: 20px;
     }
-  }
-  @media screen and (max-width: 425px) {
-    .iconp{
-        font-size: 30px;
-    }
-
-    .parrafo{
-        margin-left: 10%;
-        font-size: 30px;
-    }
-    .foto{
-        width: 270px;
+    .div-icon-parrafo{
+        padding-left: 30px;
+      }
+      .div-icon-parrafo p{
+        font-size: 40px;
+      
+      }
+      .containerIcon{
+          margin-left: 20%;
+         display: grid;
+         grid-template-columns:1fr 1fr 1fr;
+         gap:30px
+      }
+      .iconos{
+        width: 70px;
+        height: 60px;
        
     }
-    .containerIcon{
-        margin-top: 90px;
-    }
-.divPrincipal{
-    padding-top: 20px;
-}
   }
 
-  @media screen and (max-width: 320px) {
+
+  @media screen and (max-width: 600px) {
     .parrafo{
-        margin-left: 10%;
-        font-size: 30px;
+        margin-left: 13%;
+        font-size: 60px;
+        width: 900px;
+        text-align:start;
     }
     .foto{
-        width: 300px;
-       
+        width: 650px;
+       border-radius: 5px;
     }
     .h3{
-        font-size: 40px;
-        padding-top: 2px;
+        font-size: 80px;
+        margin-bottom: 50px;
+       
     }
     .iconp{
-        font-size: 30px;
+        margin-top: 80px;
+        font-size: 60px;
+        margin-left: 5%;
     }
-  
+.iconos{
+    width: 90px;
+    height: 80px;
+   
+}
+.div-icon-parrafo{
+  padding-left: 30px;
+}
+.div-icon-parrafo p{
+  font-size: 40px;
+
+}
+.containerIcon{
+  margin-left: 15%;
+   display: grid;
+   grid-template-columns:1fr 1fr;
+   gap:40px
+}
+.containerPerfil{
+    margin-top: 100px;
+}
   }

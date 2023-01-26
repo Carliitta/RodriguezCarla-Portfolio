@@ -1,7 +1,7 @@
 import "../components/proyectos.css"
 import clima from "../img/capturaClima.PNG"
-import pokemon from "../img/capuraPoke.PNG"
-import countries from "../img/capturaContries.PNG"
+import movie from "../img/capuramovies.PNG"
+import foods from "../img/capFood.PNG"
 import video from "../img/video.png"
 import git from "../img/github.png"
 export default function Proyectos() {
@@ -20,47 +20,45 @@ export default function Proyectos() {
                                 haciendo peticiones a una api externa.
                                 Tecnologias utilizadas: React,Javascript,css,node</p>
                                 <a href="https://github.com/Carliitta/app-clima-react" target="_blank">
-                                 <img style={{ width: "35px" ,height:"25px" ,marginRight:"10px",marginTop:"5px"}} src={git} title="codigo" />
+                                 <img  className="iconitoGit" src={git} title="codigo" />
                                </a>
                             </div>
                         </figure>
                     </a>
                 </div>
                 <div className="contenedor">
-                    <a href="https://get-pokemones.netlify.app/" target="_blank">
+                    <a href="https://pelisdb.netlify.app/" target="_blank">
                         <figure>
-                          <img  src={pokemon} alt="portada"/>
+                          <img  src={movie} alt="portada"/>
                             <div className="capa">
-                                <h3>App PokeApi</h3>
+                                <h3>App pelisDb</h3>
                                 <p >
-                                    Esta es una app hecha con react.js y redux utilizando varios hooks 
-                                    (useEffect,UseState,UseParams)y las rutas con react-router-dom
+                                    Esta es una app hecha con react.js, utilizando varios hooks 
+                                    (useEffect,UseState,UseParams)y rutas con react-router-dom
                                 </p>
-                                <a href="https://github.com/Carliitta/PokeApi" target="_blank">
-                                 <img style={{ width: "35px" ,height:"25px" ,marginRight:"10px",marginTop:"5px"}} src={git} title="codigo" />
+                                <a href="https://github.com/Carliitta/moviesDB" target="_blank">
+                                 <img className="iconitoGit"  src={git} title="codigo" />
                                </a>
                            </div>
                         </figure>
                     </a>
                 </div>
                   <div className="contenedor">
+                        <a href="https://foodsfullstack.netlify.app/" target="_blank">
                         <figure>
-                          <img src={countries} alt="portada"/>
+                          <img src={foods} alt="portada"/>
                             <div className="capa">
-                                <h3>app Countries</h3>
+                                <h3>app Foods</h3>
                                 <p >
-                                    App de paises utilizando las tecnologias de html-css-react-redux-javascript-node.js en la parte del frontend,
-                                    y en la parte del backend express y postgresSql
+                                Obtienes una lista de recetas y la posibilidad de creearlas.<br></br>frontEnd(javascript-css-react-redux) y backEnd(node,express,postgres)
+                                     
                                 </p>
-                               <a href="https://github.com/Carliitta/PI-countries2022" target="_blank">
-                                 <img style={{ width: "35px" ,height:"25px" ,marginRight:"10px" ,marginTop:"5px"}} src={git} title="codigo" />
+                               <a href="https://github.com/Carliitta/PI-food" target="_blank">
+                                 <img className="iconitoGit" src={git} title="codigo" />
                                </a>
-                                <a href="https://drive.google.com/file/d/1fUHSxzFD2bvwNBWzxvlhFn-8CmFwkRfb/view?usp=share_link" target="_blank">
-                                <img style={{ width: "35px" ,height:"25px",marginTop:"5px" }} src={video} title="video" />
-
-                                </a>
                            </div>
                         </figure>
+                    </a>
                 </div>
            </div>
        

@@ -15,15 +15,15 @@
 }
 body{
 
-  background: rgb(58,103,180);
-background: linear-gradient(90deg, rgb(142, 45, 199) 0%, rgb(60, 18, 165) 49%, rgba(2,0,9,1) 100%)
+background: rgb(58,103,180);
+background: linear-gradient(90deg, rgb(89, 9, 143) 0%, rgb(60, 18, 165) 49%, rgba(2,0,9,1) 100%)
    
 }
 .title{
 text-align: left;
 color:var(--color-green);
 
-font-size: 60px;
+font-size: 70px;
 }
 
 .container{
@@ -31,7 +31,7 @@ font-size: 60px;
     display:grid;
     grid-template-columns: repeat(auto-fill, 570px);
     gap: 290px; /* para separar entre ellos */
-    padding-top: 100px;
+    padding-top: 120px;
     flex-wrap: nowrap;
 }
 .img{
@@ -65,16 +65,16 @@ font-size: 60px;
     text-decoration: none;
     float: left;
     color: var(--color-green);
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 30px;
     border: 1.5px solid var(--color-white);
     border-radius: 3px;
     text-align: center;
-    width: 150px;
-    height: 40px;
+    width: 180px;
+    height: 45px;
     padding: 7px;
     background-color: var(--color-blue);
-    background: linear-gradient(150deg, #06196ec9,  #670fafc5, #057059);
+    background: linear-gradient(150deg, #06196ec9,  #af0f87c5, #057043);
     background-size: 400% 300%;
     animation: BgGradient 5s ease infinite;
 }
@@ -107,8 +107,8 @@ font-size: 60px;
     background: var(--color-black);
 }
 section{
-    height: 100vh;
-    border-bottom: 2px;
+    height: 90vh;
+  
 }
 
 footer{
@@ -122,7 +122,7 @@ footer{
 .pie{
   color: var(--color-white);
   margin-bottom: 10px;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   font-family:cursive;
 
@@ -191,78 +191,218 @@ footer{
 
 
 /* medias */
-@media screen and (max-width: 1024px) {
-
-.text{
-  margin-top: 30px;
-justify-content: center;
+@media screen and ( max-width:1200px) {
+  body{
+    background: rgb(46, 9, 105)
+  }
+  .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, 450px);
+    gap: 120px; /* para separar entre ellos */
+  }
+  .img{
+    width: 400px;
+    height: auto;
+  }
+  .text{
+    margin-left: 20px;
+  }
+  .title{
+    font-size: 50px;
+  }
+  .span{
+    font-size: 40px;
+  }
+  .arrow-container{
+    left: 50%;
+    top: 40%;
+  }
+  #inicio,#sobre,#contacto,#portafolio{
+    height: auto;
+    padding-bottom: 50px; 
+  }
+  #sobre,#contacto{
+    background-color: #054970;
+  }
 }
+@media screen and ( max-width:992px) {
 
-.img{
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+  #inicio,#sobre,#contacto,#portafolio{
+    width: 1050px;
+    height: auto;
+    padding-bottom: 120px;
+  }
+
+  .img{
+
+    width: 650px;
+    border-radius: 12px;
+    height: auto;
+    margin-left: 1%;
+  }
+  .divImg{
+    margin-top: 100px;
+    height: 200px;
+  }
+ .text{
+  margin-left: 10px;
+ 
+ }
+ .arrow{
   display: none;
 }
- 
-}  
-@media screen and (max-width: 768px) {
-  .text{
-    margin-top: 30px;
-    margin-left: 30px;
-  }
-    
+.title{
+  font-size: 90px;
+  margin-left: 30px
 }
-
-@media screen and ( max-width:425px) {
-  
-body{
-  background: rgb(46, 9, 105)
+.span{
+  margin-left: 30px;
+  font-size: 70px;
+  margin-top: 20px;
+}
+.btnContacto{
+  font-size: 50px;
+  width: 300px;
+  height: 90px;
+  margin-top: 40px;
+  margin-left: 30px
 }
 .pie{
   font-size: 25px;
 
 }
 footer{
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+}
+}
+ 
+  
+@media screen and (max-width: 768px) {
+
+  .pie{
+    font-size: 30px;
+  
+  }
+  footer{
+    margin-bottom: 60px;
+  }
+  .title{
+    font-size: 100px;
+  }
+  #sobre,#contacto{
+    background-color: #054970;
+  }
+  
+  .img{
+    display: block;
+    width: 900px;
+    border-radius: 12px;
+    height: auto;
+    margin-left: 10%;
+   
+
+  }
+    .text{
+     text-align: left;
+     margin-top: 500px;
+     margin-left: 10px;
+    
+    }
+    .span{
+      margin-top: 30px;
+      margin-left: 10px;
+      font-size: 90px;
+    }
+ 
+  .pie{
+    margin-bottom: 40px;
+  }
+  .btnContacto{
+    margin-top: 70px;
+    margin-left: 30%;
+    width: 500px;
+    height: 120px;
+    font-size: 45px;
+  }
+  #inicio,#sobre,#contacto,#portafolio{
+    width: 1180px;
+    height: auto;
+    padding-bottom: 120px;
+  }
+    
+}
+
+
+@media screen and ( max-width:600px) {
+  
+body{
+  background: rgb(46, 9, 105)
+}
+.pie{
+  font-size: 30px;
+
+}
+footer{
+  margin-bottom: 30px;
 }
 .title{
-  font-size: 80px;
+  font-size: 120px;
 }
-#sobre,#contacto{
-  background-color: #054970;
-}
-  .container{
-  margin-left: 10px;
-  }
-  section{
-    height: 830px;
-    width: 670px;
-    border-bottom: 2px;
-   
-  }
+
   .text{
    text-align: left;
-   margin-top: 200px;
-   margin-left: 1px;
+   margin-top: 600px;
+   margin-left: 10px;
+  
   }
   .span{
-    margin-top: 30px;
-    font-size: 50px;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 90px;
   }
 
+  .img{
+    display: block;
+    width: 1100px;
+    border-radius: 10px;
+    height: auto;
+    margin-left: 4%;
+   
+
+  }
+.container{
+
+  display: flex;
+  flex-direction: column-reverse;
+
+
+}
+.divImg{
+  margin-top: 250px;
+  height: 300px;
+}
   .arrow{
     display: none;
   }
 .pie{
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .btnContacto{
-  margin-top: 90px;
-  width: 280px;
-  height: 80px;
-  font-size: 40px;
+  margin-top: 200px;
+  margin-left: 30%;
+  width: 500px;
+  height: 130px;
+  font-size: 45px;
 }
 #inicio,#sobre,#contacto,#portafolio{
+  width: 1200px;
   height: auto;
-  padding-bottom: 50px;
+  padding-bottom: 120px;
 }
 
 }

@@ -23,6 +23,14 @@
     height: auto;
    background: none;
 }
+
+.capa a .iconitoGit{
+    width: 50px;
+    height:35px;
+    margin-right:10px;
+    margin-top:5px
+}
+
 .contenedor figure{
    position:relative;
     height: 290px;
@@ -76,59 +84,138 @@
     margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-.proyectos{
-    gap: 80px;
 
-}
-.contenedor figure {
-    width: 300px;
-    height: auto;
-}
-.contenedor figure .capa p{
-    font-size: 12px;
-}
-}
-
-@media screen and (max-width: 480px) {
-  .proyectos{
-    gap:40px
+@media screen and ( max-width:1200px) {
+    .proyectos{
+        grid-template-columns: repeat(auto-fill, 260px);
+        gap: 80px; /* para separar entre ellos */
+        padding-top: 40px;
+        padding-bottom: 20px;
+        height: auto;
+    }
+    .contenedor{
     
-  }
-  }
-  @media screen and (max-width: 425px) {
+       height: 230px;
+    }
+    .contenedor figure {
+        width: 320px;
+        height: 230px;
+        margin-bottom: 80px;
+
+    }
+    .contenedor figure .capa p{
+        font-size: 15px;
+        max-width: 800px;
+    }
+     .contenedor figure .capa h3{
+        font-size: 20px;
+      
+    }
+    .capa a .iconitoGit{
+        width: 30px;
+        height: 35px;
+    }
+}
+@media screen and ( max-width:992px) {
+    .divProyectos{
+        padding-top: 40px;
+      }
+    .proyectos{
+        display: block;
+       margin-left: 8%;
+  
+      }
+      .contenedor figure {
+          width: 870px;
+          height: auto;
+          margin-bottom: 80px;
+  
+      }
+      .titleProyects{
+          padding-top: 100px;
+          font-size: 60px;
+      }
+      .contenedor figure .capa p{
+          font-size: 40px;
+          max-width: 800px;
+      }
+       .contenedor figure .capa h3{
+          font-size: 45px;
+        
+      }
+      .capa a .iconitoGit{
+          width: 90px;
+          height: 85px;
+      }
+}
+@media screen and (max-width: 768px) {
+    .divProyectos{
+        padding-top: 40px;
+      }
+        .proyectos{
+          display: block;
+         margin-left: 8%;
+    
+        }
+        .contenedor figure {
+            width: 999px;
+            height: auto;
+            margin-bottom: 50px;
+    
+        }
+        .titleProyects{
+            padding-top: 100px;
+            font-size: 70px;
+        }
+        .contenedor figure .capa p{
+            font-size: 50px;
+            max-width: 800px;
+        }
+         .contenedor figure .capa h3{
+            font-size: 60px;
+          
+        }
+        .capa a .iconitoGit{
+            width: 90px;
+            height: 85px;
+        }
+     
+
+}
+
+
+  
+  @media screen and (max-width: 600px) {
   .divProyectos{
-    padding-top: 130px;
+    padding-top: 250px;
   }
     .proyectos{
       display: block;
-     margin-left: 13%;
+     margin-left: 9%;
 
     }
     .contenedor figure {
-        width: 500px;
+        width: 995px;
         height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
 
     }
     .titleProyects{
         padding-top: 20px;
-        font-size: 30px;
+        font-size: 70px;
+    }
+    .contenedor figure .capa p{
+        font-size: 50px;
+        max-width: 800px;
+    }
+     .contenedor figure .capa h3{
+        font-size: 60px;
+      
+    }
+    .capa a .iconitoGit{
+        width: 90px;
+        height: 85px;
     }
  
     }
    
-    @media screen and (max-width: 320px) {
-        .titleProyects{
-            font-size: 40px;
-            padding-top: 2px;
-        }
-        .proyectos{
-            margin-left: 10%;
-        }
-        .contenedor figure {
-            width: 550px;
-            height: auto;
-    
-        }
-    }
